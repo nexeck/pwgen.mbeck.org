@@ -1,0 +1,199 @@
+/*
+ GENERAL
+ **********************************/
+body {
+    margin:0;
+    padding:0;
+    background:#ffffff;
+
+    font: normal 11px Arial, Helvetica, sans-serif;
+}
+h1 {font:bold 20px Arial;}
+h2 {font:bold 16px Arial;}
+h3 {font:bold 14px Arial;}
+h1,h2,h3 {margin:0;padding:0;}
+
+a {text-decoration:none;color:black;}
+a:hover {color:grey;}
+
+img {border:none;}
+
+p a {color:#5a6677;font-weight:700;text-decoration:underline;}
+
+p {margin:1em 0;}
+
+li a {color:#5a6677;font-weight:700;}
+
+table {font:normal 11px Tahoma;background:#e5e5e5;border:.5em solid #e5e5e5;border-spacing:0px;}
+table th {text-shadow:1px 1px 0 white;}
+table thead th {font:bold 12px Arial;padding:5px 7px;}
+table tbody tr {background:#fff;color:#555}
+table tbody tr:hover {background:#fafafa}
+table tbody td, table tbody th {padding:9px;}
+table tbody th {background:#f7f7f7;font-weight:bold;color:#555}
+table a {color:#4c7dc1;font-weight:700;}
+
+table thead th {border-bottom:1px solid white;}
+table tbody td {border-bottom:1px solid #e3e3e3;}
+table tbody th {border-bottom:1px solid #e3e3e3;}
+
+
+/**********************************/
+
+
+/*
+ TOOLS
+ **********************************/
+.clear {clear:both;display:block;}
+/*.clear:after {content: ".";display: block;height:0;overflow:hidden;clear:both;visibility:hidden;}*/
+
+.tiny {width:50px}
+.small {width:100px}
+.medium {width:200px}
+.large {width:300px}
+.huge {width:400px}
+
+.float-left {float:left;}
+.float-right {float:right;}
+
+.text-left {text-align:left;}
+.text-right {text-align:right;}
+.text-center {text-align:center;}
+
+.bold {font-weight:700;}
+
+img.float-left {margin:0 1em 1em 0;}
+
+.hide {display:none;}
+
+.full-width {width:100%;}
+.half-width {width:49%;}
+
+/*
+ TOOLS
+ **********************************/
+table,
+.rounded {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    -khtml-border-radius:5px;
+}
+.rounded-top {
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+
+    -webkit-border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+
+    -khtml-border-top-left-radius:5px;
+    -khtml-border-top-right-radius:5px;
+}
+.rounded-bottom {
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+
+    -khtml-border-bottom-left-radius:5px;
+    -khtml-border-bottom-right-radius:5px;
+}
+.rounded-content {
+    -moz-border-radius-topright:5px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+
+    -webkit-border-top-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+
+    -khtml-border-top-right-radius:5px;
+    -khtml-border-bottom-left-radius:5px;
+    -khtml-border-bottom-right-radius:5px;
+}
+.box-shadow {
+    -moz-box-shadow: 1px 1px 10px #2f3338;
+    -webkit-box-shadow: 1px 1px 10px #2f3338;
+    box-shadow: 1px 1px 10px #2f3338;
+}
+.box-shadow-small {
+    -moz-box-shadow: 0px 5px 9px #777;
+    -webkit-box-shadow: 0px 5px 9px #777;
+    box-shadow: 0px 5px 9px #777;
+}
+.content-shadow {
+    -moz-box-shadow: 0px 2px 5px #bbb;
+    -webkit-box-shadow: 0px 2px 5px #bbb;
+    box-shadow: 0px 2px 5px #bbb;
+}
+
+/* other CSS3 settings */
+input[type="text"],textarea,select {
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -khtml-border-radius:3px;
+}
+/**********************************/
+
+
+/*
+ PAGE
+ **********************************/
+#page {width:1024px;margin:0 auto;}
+
+/**********************************/
+
+
+/*
+ HEADER
+ **********************************/
+#header {background:white;padding:1em;margin:1em 0 2em 0;}
+#header h1 {margin-bottom:1em;text-align:center;}
+
+/**********************************/
+
+#likeit {margin:0 auto;text-align:center;}
+
+/*
+ CONTENT
+ **********************************/
+#content {background:white;padding:1em;}
+#content p {margin-left:1.5em;}
+
+/**********************************/
+
+/*
+ RESULT
+ **********************************/
+#result {background:white;padding:1em;margin:2em 0;display: none;}
+#result p {margin-left:1.5em;}
+#result .results {padding:0;margin:0;font: 1.3em monospace;display:block;font-weight: bold;text-align:center;}
+
+/**********************************/
+
+/*
+ PWGUIDE
+ **********************************/
+#pwguide {background:white;padding:1em;margin:2em 0;}
+#pwguide p {margin-left:1.5em;}
+#pwguide ul {margin:0;padding:0;float:left;}
+#pwguide li {margin:0 1em;}
+/**********************************/
+
+/*
+ FOOTER
+ **********************************/
+#footer {background:white;padding:1em;margin:2em 0;}
+#footer ul {list-style-type:none;margin:0;padding:0;float:right;}
+#footer li {display:inline-block;margin:0 1em;}
+/**********************************/
+
+/*
+ FORM and INPUT
+ **********************************/
+form input[type="text"],select {border:1px solid #5a6677;padding:4px;}
+form input[type="text"]:focus,select:focus,textarea:focus {border-color:rgb(151,145,66);background:rgb(250,255,213);}
+form label {float:left;width:120px;text-align:right;margin-right:1em;font-weight:bold;text-shadow:1px 1px 0 #efefef;margin-top:.5em;}
+form div p {float:left;width:75%;}
+form div label {margin:.5em -.5em 0 1.5em;}
+/**********************************/

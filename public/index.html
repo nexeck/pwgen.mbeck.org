@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8 />
+        <title>Online JavaScript Password Generator</title>
+
+        <meta name="google-site-verification" content="mKKNOBdEFYBJIagCT0FI23H3l1RKDygxk_0JjWOLHwE" />
+
+        <meta name="DC.title" content="Online Password Generator" />
+        <meta name="DC.creator" content="Marcel Beck" />
+        <meta name="DC.contributor" content="Marcel Beck" />
+        <meta name="DC.type" content="Service" />
+        <meta name="DC.language" content="de,en" />
+        <meta name="DC.subject" content="Password Generator" />
+        <meta name="DC.description" content="Create Random Passwords" />
+        <meta name="DC.publisher" content="Marcel Beck" /> 
+        <meta name="DC.rights" content="Copyright 2010 by Marcel Beck" />
+
+        <meta name="description" content="Online Password Generator" />
+        <meta name="keywords" content="online,password,passwort,pwgen,generator,prohibition" />
+        <meta name="author" content="Marcel Beck" />
+
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+
+        <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.password.min.js"></script>
+        <script type="text/javascript" src="js/pwgen.min.js"></script>
+
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-7966905-2']);
+            _gaq.push(['_trackPageview']);
+   
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+    </head>
+
+
+    <body>
+        <div id="page">
+
+            <div id="header" class="rounded box-shadow">
+                <h1>Online JavaScript Password Generator</h1>
+                <div class="clear"></div>
+            </div>
+
+            <div id="content" class="rounded box-shadow">
+                <form action="#" method="post">
+                    <p>
+                        <label for="length">Password Length</label>
+                        <select name="length" id="length" size="1" style="margin-left:5px;">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8" selected="selected">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                        </select>
+                    </p>
+                    <div>
+                        <label>Settings</label>
+                        <p>
+                            <input type="checkbox" name="lowercase" id="lowercase" checked="checked" /> lower-case (e.g. abcdef)<br />
+                            <input type="checkbox" name="uppercase" id="uppercase" checked="checked" /> lupper-case (e.g. ABCDEF)<br />
+                            <input type="checkbox" name="numbers" id="numbers" checked="checked" /> (e.g. 0123456789)<br />
+                            <input type="checkbox" name="special" id="special" /> (e.g. +-*@#%=?!_;.)<br />
+                        </p>
+                    </div>
+                    <p>
+                        <input type="submit" name="submit" id="submit" value="Generate" />
+                    </p>
+                </form>
+                <div class="clear"></div>
+            </div>
+
+            <div id ="result" class="rounded box-shadow">
+                <div id="password" class="results"></div>
+                <div class="clear"></div>
+            </div>
+
+            <div id="pwguide" class="rounded box-shadow">
+                <h2>Password Guide</h2>
+                <ul>
+                    <li>the use of both upper- and lower-case letters (case sensitivity)</li>
+                    <li>inclusion of one or more numerical digits</li>
+                    <li>inclusion of special characters, e.g. @, #, $ etc.</li>
+                    <li>prohibition of words found in a dictionary or the user's personal information</li>
+                    <li>prohibition of passwords that match the format of calendar dates, license plate numbers, telephone numbers, or other common numbers</li>
+                    <li>prohibition of use of company name or its abbreviation</li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+
+            <div id="footer" class="rounded box-shadow">
+                &copy; 2010 by <strong><a href="http://mbeck.org" onclick="window.open(this.href,'_blank'); return false;">Marcel Beck</a></strong>
+
+                <ul>
+                    <li><a href="http://hashgen.org" onclick="window.open(this.href,'_blank'); return false;">hashgen.org</a></li>
+                </ul>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="likeit">
+            <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fpwgen.org&amp;layout=button_count&amp;show_faces=true&amp;width=100&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+        </div>
+
+    </body>
+</html>
